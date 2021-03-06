@@ -6,7 +6,7 @@ Date: 2/20/2021
 class basket extends object {
 
     constructor(){
-        super(0,5,170, 470, 80, 80, 'Images/basket.png');
+        super(0,6,170, 470, 80, 80, 'Images/basket.png');
         this.pointsTotal = 0;
     }
 
@@ -40,7 +40,7 @@ class basket extends object {
         else if((arrowDirection == "ArrowRight") && (this.currentX + this.speed <= 320)){     
             this.move("right");
         }
-        else{console.log("Out of bounds")}
+
     }
 
 }

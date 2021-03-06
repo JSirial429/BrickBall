@@ -33,3 +33,8 @@ header h1 {
     border: 1px darkblue solid;
     background-color: beige;
 }
+
+footer {
+    margin-top: 40px;
+    text-align: center;
+}

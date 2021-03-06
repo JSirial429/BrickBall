@@ -63,13 +63,11 @@ class game{
         
     }
 
-    countdown(){
-        
-        timerHTML = document.querySelector(".right-bar");
-        setInterval(()=>{
-             this.timer--
-             
-        }, 1000)
+    checkCollision(){
+
+        if(true){
+
+        }
 
     }
 
