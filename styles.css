@@ -1,5 +1,14 @@
+/*
+Ironhack Web Dev Jan 2021
+Author: Jorge Sirias
+Date: 2/20/2021
+*/
+
 body {
-    /* background-color: aquamarine; */
+    background-image: url("Images/orange_bballCourt.jpg");
+    background-size: cover;
+    color: white;
+
 }
 
 .container {
@@ -7,12 +16,6 @@ body {
     justify-content: space-evenly;
     margin-top: 50px;
 }
-
-/*
-Ironhack Web Dev Jan 2021
-Author: Jorge Sirias
-Date: 2/20/2021
-*/
 
 .left-bar {
     height: 100px;
