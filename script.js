@@ -14,7 +14,7 @@ let frame = 0;
 setInterval( function(){
 
   frame++;
-  console.log(frame)
+  
   ctx.clearRect(0,0,canvas.width, canvas.height);
   newGame.basketHoop.draw();
   
@@ -22,6 +22,7 @@ setInterval( function(){
     newGame.createGameObject();
   }
   newGame.renderGameObjects();
+  newGame.checkCollision();
 
 }, 100);
 
