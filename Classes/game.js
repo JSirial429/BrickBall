@@ -14,6 +14,7 @@ class game{
         this.objectArr = [];
         this.timer = 30;
         this.score = 0;
+        this.gameId = null;
 
     }
 
@@ -95,7 +96,25 @@ class game{
 
     startTimer(){
         
-        
+        let timerDiv = document.querySelector(".right-bar");
+
+        setInterval( ()=>{
+
+            if(this.timer <= 0){
+
+                clearInterval(this.gameId);
+                ctx.clearRect(0,0, canvas.width, canvas.height)
+                ctx.fillText("Game Over", canvas.width/2, canvas.height/2);
+
+            }
+            else{
+                
+                this.timer--;
+                timerDiv.innerText = `Timer:${this.timer}`
+            
+            }
+            
+        }, 1000);
 
     }
 

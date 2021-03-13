@@ -11,8 +11,11 @@ let newGame = new game();
 
 let frame = 0;
 
-setInterval( function(){
+newGame.startTimer();
 
+pID = setInterval( function(){
+
+  newGame.gameId = pID;
   frame++;
   
   ctx.clearRect(0,0,canvas.width, canvas.height);

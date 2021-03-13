@@ -1,6 +1,7 @@
 class object {
 
     constructor(points, speed,currentX, currentY,width, height, imgSource){
+        
         this.points = points;
         this.speed = speed;
         this.currentX = currentX;
